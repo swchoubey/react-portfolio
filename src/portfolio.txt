@@ -1,0 +1,66 @@
+import React, { useState } from 'react'
+import Modal from 'react-modal'
+import './portfolio.css'
+import IMG1 from '../../assets/portfolio1.jpg'
+import IMG2 from '../../assets/portfolio2.jpg'
+import IMG3 from '../../assets/portfolio3.jpg'
+import IMG4 from '../../assets/portfolio4.jpg'
+import IMG5 from '../../assets/portfolio5.png'
+import IMG6 from '../../assets/portfolio6.jpg'
+const Portfolio = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  const toggleModal = (project) => {
+    setShowModal(!showModal);
+    setSelectedProject(project);
+  };
+
+  const projectDescriptions = {
+    project1: 'Flatmate Finder is a mobile application designed to simplify the process of finding roommates and suitable apartments. The application streamlines the roommate and apartment search by aggregating data from various apartment listing websites, providing users with a unified interface to browse listings and connect with potential roommates.',
+    project2: 'Genetic Relation Detection is a machine learning project focused on identifying the existence of genetic relationships between the subjects of a photograph. The project leverages machine learning models to analyze images and detect familial connections among individuals present in the photos.',
+    project3: 'A Natural Language Processing (NLP) project aimed at classifying tweets into two categories: tweets related to real disasters and those that are not. The project utilizes NLP techniques and machine learning to automatically identify tweets containing information about actual disasters, enabling timely response and support efforts.',
+    project4: 'The "Voice-Based Navigation for Bhuvan Portal" project aimed to enhance the accessibility and user experience of the Bhuvan portal, which is an initiative by the Indian Space Research Organization (ISRO). The primary focus was to develop a voice-based navigation system that allows users to interact with the Bhuvan portal using natural language voice commands, improving accessibility and usability.',
+    project5: '"End Task: Pandemic" is a web-based platform that was developed to foster community cooperation during the challenging period of the COVID-19 pandemic. The primary objective was to provide users with valuable information, interactive features, and resources to navigate the pandemic effectively. Leveraging web technologies, the platform offers real-time pandemic statistics, symptoms assessment tools, and a variety of engaging activities to keep users informed and engaged during this global health crisis.',
+    project6: 'This project aimed to make empirical observations about how data structure efficiency impacts real-world software performance. It involved implementing a program to solve a specific computational problem related to word frequency distribution, considering stop words. Four variations of the algorithm were implemented using different data structures: unsorted vector, unsorted linked list, hash table, and a binary search tree.',
+  }
+  return (
+    <section id='portfolio'>
+      <h5>My Recent Projects</h5>
+      <h2>Portfolio</h2>
+      <div className='container portfolio__container'>
+        {[IMG1, IMG2, IMG3, IMG4, IMG5, IMG6].map((imgSrc, index) => (
+          <article className='portfolio__item' key={index}>
+          <div className="portfolio__item-image">
+            <img src={imgSrc} alt={`Project ${index + 1}`} />
+          </div>
+          <h3>{`Project ${index + 1}`}</h3>
+          <div className='portfolio__item-cta'>
+            {/* Button to toggle modal */}
+            <button className='btn btn-primary' onClick={() => toggleModal(`project${index + 1}`)}>View Description</button>
+          </div>
+        </article>
+        ))}
+        
+      </div>
+      <Modal
+        isOpen={showModal}
+        onRequestClose={toggleModal}
+        contentLabel='Project Description Modal'
+        ariaHideApp={false} 
+      >
+        <div className='modal'>
+          <div className='modal-content'>
+            <span className='close' onClick={toggleModal}>
+              &times;
+            </span>
+            <p>{projectDescriptions[selectedProject]}</p>
+          </div>
+        </div>
+      </Modal>
+
+    </section>
+  )
+}
+
+export default Portfolio

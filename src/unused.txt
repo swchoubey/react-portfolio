@@ -1,0 +1,156 @@
+{/*=============================================*/}
+        
+        <div className="experience__dev">
+        <h3>Development and Methodologies</h3>
+          <div className="experience__content">
+            <article className='experience__details'>
+              <MdVerified />
+              <div>
+                <h4>Web Application Development</h4>
+                <small className='text-light'>Experienced</small>
+              </div>
+            </article>
+            <article className='experience__details'>
+              <MdVerified />
+              <div>
+                <h4>Azure</h4>
+                <small className='text-light'>Experienced</small>
+              </div>
+            </article>
+            <article className='experience__details'>
+              <MdVerified />
+              <div>
+                <h4>AWS</h4>
+                <small className='text-light'>Beginner</small>
+              </div>
+            </article>
+            <article className='experience__details'>
+              <MdVerified />
+              <div>
+                <h4>Agile Methodology</h4>
+                <small className='text-light'>Intermediate</small>
+              </div>
+            </article>
+            <article className='experience__details'>
+              <MdVerified />
+              <div>
+                <h4>Git</h4>
+                <small className='text-light'>Experienced</small>
+              </div>
+            </article>
+            <article className='experience__details'>
+              <MdVerified />
+              <div>
+                <h4>DevOps</h4>
+                <small className='text-light'>Intermediate</small>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        {/*=============================================*/}
+
+        <div className="experience__project">
+        <h3>Project Management and Collaboration</h3>
+          <div className="experience__content">
+            <article className='experience__details'>
+              <MdVerified />
+              <div>
+                <h4>Atlassian (Jira, Confluence)</h4>
+                <small className='text-light'>Intermediate</small>
+              </div>
+            </article>
+            <article className='experience__details'>
+              <MdVerified />
+              <div>
+                <h4>Contributing to Open Source Community</h4>
+                <small className='text-light'>Intermediate</small>
+              </div>
+            </article>
+            <article className='experience__details'>
+              <MdVerified />
+              <div>
+                <h4>Cross-Functional Communication</h4>
+                <small className='text-light'>Experienced</small>
+              </div>
+            </article>
+            <article className='experience__details'>
+              <MdVerified />
+              <div>
+                <h4>Problem Solving</h4>
+                <small className='text-light'>Experienced</small>
+              </div>
+            </article>
+            <article className='experience__details'>
+              <MdVerified />
+              <div>
+                <h4>Technical Project Management</h4>
+                <small className='text-light'>Experienced</small>
+              </div>
+            </article>
+            <article className='experience__details'>
+              <MdVerified />
+              <div>
+                <h4>Project Delivery</h4>
+                <small className='text-light'>Experienced</small>
+              </div>
+            </article>
+          </div>
+        </div>
+
+==============================================================================================
+
+ {/* <article className='portfolio__item'>
+          <div className="portfolio__item-image">
+            <img src={IMG1} alt='Project 1' />
+          </div>
+          <h3>Project 1</h3>
+          <div className='portfolio__item-cta'>
+            <a href='github' className='btn btn-primary' target='_blank'>Source Code</a>
+          </div>
+        </article>
+        <article className='portfolio__item'>
+          <div className="portfolio__item-image">
+            <img src={IMG2} alt='Project 2' />
+          </div>
+          <h3>Project 2</h3>
+          <div className='portfolio__item-cta'>
+            <a href='github' className='btn btn-primary' target='_blank'>Source Code</a>
+          </div>
+        </article>
+        <article className='portfolio__item'>
+          <div className="portfolio__item-image">
+            <img src={IMG3} alt='Project 3' />
+          </div>
+          <h3>Project 3</h3>
+          <div className='portfolio__item-cta'>
+            <a href='github' className='btn btn-primary' target='_blank'>Source Code</a>
+          </div>
+        </article>
+        <article className='portfolio__item'>
+          <div className="portfolio__item-image">
+            <img src={IMG4} alt='Project 4' />
+          </div>
+          <h3>Project 4</h3>
+          <div className='portfolio__item-cta'>
+            <a href='github' className='btn btn-primary' target='_blank'>Source Code</a>
+          </div>
+        </article>
+        <article className='portfolio__item'>
+          <div className="portfolio__item-image">
+            <img src={IMG5} alt='Project 5' />
+          </div>
+          <h3>Project 5</h3>
+          <div className='portfolio__item-cta'>
+            <a href='github' className='btn btn-primary' target='_blank'>Source Code</a>
+          </div>
+        </article>
+        <article className='portfolio__item'>
+          <div className="portfolio__item-image">
+            <img src={IMG6} alt='Project 6' />
+          </div>
+          <h3>Project 6</h3>
+          <div className='portfolio__item-cta'>
+            <a href='github' className='btn btn-primary' target='_blank'>Source Code</a>
+          </div>
+        </article> */}
