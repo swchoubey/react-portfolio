@@ -40,6 +40,25 @@
     color: var(--color-primary);
 }
 
+
+/* MEDIA QUERIES: MEDIUM DEVICES (tablets)*/
+
+@media screen and (max-width: 1024px) {
+   .experience__container {
+        grid-template-columns: 1fr;
+   }
+
+   .experience__container > div {
+        width: 98%;
+        padding: 1.2rem;
+        margin: 0 auto;
+   }
+
+   .experience__content {
+        padding: 1rem;
+   }
+}
+
 /* MEDIA QUERIES: SMALL DEVICES (phones)*/
 
 @media screen and (max-width: 600px) {
@@ -52,21 +71,3 @@
         padding: 2rem 1rem;
     }
 }
-/* MEDIA QUERIES: MEDIUM DEVICES (tablets)*/
-
-@media screen and (max-width: 1024px) {
-   .experience__container {
-        grid-template-columns: 1fr;
-   }
-
-   .experience__container > div {
-        width: 80%;
-        padding: 2rem;
-        margin: 0 auto;
-   }
-
-   .experience__content {
-        padding: 1rem;
-   }
-}
-

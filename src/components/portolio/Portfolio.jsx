@@ -4,9 +4,55 @@ import IMG1 from '../../assets/wordle.jpg'
 import IMG2 from '../../assets/nlp.jpg'
 import IMG3 from '../../assets/ff.jpg'
 import IMG4 from '../../assets/retOps.jpg'
-import IMG5 from '../../assets/todo.jpg'
-import IMG6 from '../../assets/bar.jpg'
+import IMG5 from '../../assets/pix.jpg'
+import IMG6 from '../../assets/bar.jpg' 
+
+/* import IMG1 from '../../assets/portfolio/portfolio1.jpg'
+import IMG2 from '../../assets/portfolio/portfolio2.jpg'
+import IMG3 from '../../assets/portfolio/portfolio3.jpg'
+import IMG4 from '../../assets/portfolio/portfolio4.jpg'
+import IMG5 from '../../assets/portfolio/portfolio5.png'
+import IMG6 from '../../assets/portfolio/portfolio6.jpg' */
 import Dashboard from '../../assets/dashboard.pdf'
+const data = [
+  {
+    id: 1,
+    image: IMG1,
+    title: 'Wordle Clone',
+    github: 'https://github.com/swchoubey/Wordle-Clone',
+  },
+  {
+    id: 2,
+    image: IMG2,
+    title: 'Twitter Sentiment Analysis',
+    github: 'https://github.com/swchoubey/NLP_Disaster_Tweets_Classification',
+  },
+  {
+    id: 3,
+    image: IMG3,
+    title: 'Flatmate Finder',
+    github: 'https://github.com/glear14195/flatmate-finder',
+  },
+  {
+    id: 4,
+    image: IMG4,
+    title: 'RetailOps',
+    github: 'https://github.com/HybridAntic/RetailProductManagementSystem',
+  },
+  {
+    id: 5,
+    image: IMG5,
+    title: 'Image Pixelator',
+    github: 'https://github.com/swchoubey/Image-Pixelator',
+  },
+  {
+    id: 6,
+    image: IMG6,
+    title: 'British Airways Performance Analysis',
+    github: Dashboard,
+  },
+]
+
 const Portfolio = () => {
   return (
     <section id='portfolio'>
@@ -14,48 +60,21 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className='container portfolio__container'>
-        <article className='portfolio__item'>
-          <div className='portfolio__item-image'>
-            <img src={IMG1} alt='wordle'/>
-          </div>
-          <h3>Wordle Clone</h3>
-          <a href='https://github.com/swchoubey/Wordle-Clone' className='btn' target='_blank'>View Source Code</a>
-        </article>
-        <article className='portfolio__item'>
-          <div className='portfolio__item-image'>
-            <img src={IMG2} alt='twitter' />
-          </div>
-          <h3>Disaster Tweets Classification</h3>
-          <a href='https://github.com/swchoubey/NLP_Disaster_Tweets_Classification' className='btn' target='_blank'>View Source Code</a>
-        </article>
-        <article className='portfolio__item'>
-          <div className='portfolio__item-image'>
-            <img src={IMG3} alt='ff' />
-          </div>
-          <h3>Flatmate Finder</h3>
-          <a href='https://github.com/glear14195/flatmate-finder' className='btn' target='_blank'>View Source Code</a>
-        </article>
-        <article className='portfolio__item'>
-          <div className='portfolio__item-image'>
-            <img src={IMG4} alt='retOps' />
-          </div>
-          <h3>RetailOps</h3>
-          <a href='https://github.com/HybridAntic/RetailProductManagementSystem' className='btn' target='_blank'>View Source Code</a>
-        </article>
-        <article className='portfolio__item'>
-          <div className='portfolio__item-image'>
-            <img src={IMG5} alt='todo' />
-          </div>
-          <h3>ToDo List Application</h3>
-          <a href='https://github.com/swchoubey/Todo-List-App' className='btn' target='_blank'>View Source Code</a>
-        </article>
-        <article className='portfolio__item'>
-          <div className='portfolio__item-image'>
-            <img src={IMG6} alt='bar' />
-          </div>
-          <h3>Analysis of British Airlines Reviews</h3>
-          <a href={Dashboard} className='btn' target='_blank'>View Dashboard</a>
-        </article>
+        {
+          data.map(({id, image, title, github}) => {
+            return(
+              <article key={id} className='portfolio__item'>
+                <div className='portfolio__item-image'>
+                  <img src={image} alt={title} />
+                </div>
+                <h3>{title}</h3>
+                <div className='portfolio__item-cta'>
+                  <a href={github} className='btn' target='_blank'>GitHub</a>
+                </div>
+              </article>
+            )
+          })
+        }
       </div>
     </section>
   )

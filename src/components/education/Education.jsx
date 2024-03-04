@@ -17,11 +17,11 @@ const Education = () => {
           <ul className='subject__list'>
             <li>
               <FaPenToSquare className='subject__list-icon' />
-              <p>Advanced Problem Solving and Programming</p>
+              <p>Advanced Problem Solving</p>
             </li>
             <li>
               <FaPenToSquare className='subject__list-icon' />
-              <p>Introduction to Artificial Intelligence</p>
+              <p>Introduction to AI</p>
             </li>
             <li>
               <FaPenToSquare className='subject__list-icon' />
@@ -33,7 +33,7 @@ const Education = () => {
             </li>
             <li>
               <FaPenToSquare className='subject__list-icon' />
-              <p>Computer and Communication Networks</p>
+              <p>Computer Networks</p>
             </li>
             <li>
               <FaPenToSquare className='subject__list-icon' />
@@ -115,6 +115,14 @@ const Education = () => {
             <h5 className='text-light'>Platforms: Databricks, Coursera, Udemy, Forage, Verzeo</h5>
           </div>
           <ul className='subject__list'>
+          <li>
+              <FaPenToSquare className='subject__list-icon' />
+              <p>LangChain: LLM Powered Applications</p>
+            </li>
+          <li>
+              <FaPenToSquare className='subject__list-icon' />
+              <p>Generative AI with Python and Pytorch</p>
+            </li>
             <li>
               <FaPenToSquare className='subject__list-icon' />
               <p>Generative AI with Google</p>
@@ -141,13 +149,17 @@ const Education = () => {
             </li>
             <li>
               <FaPenToSquare className='subject__list-icon' />
+              <p>Cloud Computing with Azure</p>
+            </li>
+          <li>
+              <FaPenToSquare className='subject__list-icon' />
               <p>Software Engineering Virtual Internship</p>
             </li>
-            <li>
+          <li>
               <FaPenToSquare className='subject__list-icon' />
               <p>Fundamentals of Vizualization with Tableau</p>
             </li>
-            <li>
+          <li>
               <FaPenToSquare className='subject__list-icon' />
               <p>Learning Splunk</p>
             </li>

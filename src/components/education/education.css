@@ -1,7 +1,7 @@
 .education__container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
 }
 
 .education {
@@ -55,14 +55,6 @@
     font-size: 0.79rem;
 }
 
-/* MEDIA QUERIES: SMALL DEVICES (phones)*/
-
-@media screen and (max-width: 600px) {
-    .education__container {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-}
 /* MEDIA QUERIES: MEDIUM DEVICES (tablets)*/
 
 @media screen and (max-width: 1024px) {
@@ -73,4 +65,13 @@
    .education {
     height: auto;
    }
+}
+
+/* MEDIA QUERIES: SMALL DEVICES (phones)*/
+
+@media screen and (max-width: 600px) {
+    .education__container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
 }

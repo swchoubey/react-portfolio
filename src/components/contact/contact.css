@@ -52,18 +52,19 @@ input, textarea {
     color: var(--color-white);
 }
 
-/* MEDIA QUERIES: SMALL DEVICES (phones)*/
-
-@media screen and (max-width: 600px) {
-    .container.contact__container{
-        width: var(--container-width-sm);
-    }
-}
 /* MEDIA QUERIES: MEDIUM DEVICES (tablets)*/
 
 @media screen and (max-width: 1024px) {
     .container.contact__container {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+}
+
+/* MEDIA QUERIES: SMALL DEVICES (phones)*/
+
+@media screen and (max-width: 600px) {
+    .container.contact__container{
+        width: var(--container-width-sm);
     }
 }

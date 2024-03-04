@@ -1,7 +1,7 @@
 import React from 'react'
 import './about.css'
 import { GiDiploma } from "react-icons/gi";
-import { FaUsers } from "react-icons/fa";
+import { TbBrandLeetcode } from "react-icons/tb";
 import { GiOpenFolder } from "react-icons/gi";
 import Textsphere from './Textsphere';
 const About = () => {
@@ -25,9 +25,9 @@ const About = () => {
             </article>    
         
             <article className='about__card'>
-              <FaUsers className='about__icon'/>
-              <h5>Clients</h5>
-              <small>200+ </small>
+              <TbBrandLeetcode className='about__icon'/>
+              <h5>LeetCode</h5>
+              <small>300+ Solved</small>
             </article> 
                        
             <article className='about__card'>
