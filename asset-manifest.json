@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.e7065152.css",
-    "main.js": "/react-portfolio/static/js/main.2e9e4177.js",
+    "main.css": "/react-portfolio/static/css/main.cf246dc9.css",
+    "main.js": "/react-portfolio/static/js/main.96c51197.js",
+    "static/media/bar.jpg": "/react-portfolio/static/media/bar.e263c9f8774fc7e219dc.jpg",
     "static/media/ff.jpg": "/react-portfolio/static/media/ff.fe583034a31b5fd87bee.jpg",
     "static/media/retOps.jpg": "/react-portfolio/static/media/retOps.900794c7e5a1fd2c172a.jpg",
     "static/media/nlp.jpg": "/react-portfolio/static/media/nlp.4c422af382dd363cfa14.jpg",
     "static/media/wordle.jpg": "/react-portfolio/static/media/wordle.48076ed238a9d2a21fd1.jpg",
-    "static/media/todo.jpg": "/react-portfolio/static/media/todo.ff868d7dd6351c0c9dcf.jpg",
     "static/media/dashboard.pdf": "/react-portfolio/static/media/dashboard.bf085d6801e07ecbf6a6.pdf",
-    "static/media/bar.jpg": "/react-portfolio/static/media/bar.791d7b5095e133e5a469.jpg",
+    "static/media/pix.jpg": "/react-portfolio/static/media/pix.8291f91a8199fe6e2f00.jpg",
     "static/media/banner.png": "/react-portfolio/static/media/banner.72847b5cb65a5670909e.png",
-    "static/media/Resume.pdf": "/react-portfolio/static/media/Resume.55b52844ba10697a6d13.pdf",
+    "static/media/Resume.pdf": "/react-portfolio/static/media/Resume.5c9ceef3d0253a51ba10.pdf",
     "static/media/ContactCard.pdf": "/react-portfolio/static/media/ContactCard.a606fb2040330f5125be.pdf",
     "index.html": "/react-portfolio/index.html",
-    "main.e7065152.css.map": "/react-portfolio/static/css/main.e7065152.css.map",
-    "main.2e9e4177.js.map": "/react-portfolio/static/js/main.2e9e4177.js.map"
+    "main.cf246dc9.css.map": "/react-portfolio/static/css/main.cf246dc9.css.map",
+    "main.96c51197.js.map": "/react-portfolio/static/js/main.96c51197.js.map"
   },
   "entrypoints": [
-    "static/css/main.e7065152.css",
-    "static/js/main.2e9e4177.js"
+    "static/css/main.cf246dc9.css",
+    "static/js/main.96c51197.js"
   ]
 }
